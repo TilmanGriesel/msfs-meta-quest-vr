@@ -37,12 +37,12 @@ QRes is an hold tool that provides Windows resolution changes via CLI paramters.
 
 ### 2. Configure Meta Quest Link
 
-- **Refresh Rate:** Set to **80Hz** or higher.
-- **Render Resolution:** Configure to **4192 x 2144** for optimal performance, if your rig is stronger then mine, you can probably go a bit higher.
+- **Refresh rate:** Set to **80Hz** or higher.
+- **Render resolution:** Configure to **4192 x 2144** for optimal performance, if your rig is stronger then mine, you can probably go a bit higher.
 
 ### 3. Adjust Oculus Debug Tool settings
 
-- **Link Sharpening:** Set to **Disabled**.
+- **Link sharpening:** Set to **Disabled**.
   - This setting will make the output appear slightly blurrier but more realistic, enabling finer control through in-game settings.
   - Disabling sharpening provides a perceptually better overall result.
 - **Encode Bitrate:** Optionally set to **400**. Some report that this is a good thing to do, I have mine at 0 and no issues.
@@ -63,9 +63,9 @@ QRes is an hold tool that provides Windows resolution changes via CLI paramters.
 | `-v, --vr-resolution <res>`      | VR resolution                    | `$DEFAULT_VR_RESOLUTION`      |
 | `-d, --default-resolution <res>` | Default resolution               | `$DEFAULT_DEFAULT_RESOLUTION` |
 
-2. **Example Command**
+2. **Example command**
    ```powershell
-   ./setup-vr.ps1 -o "path\to\OculusDebugToolCLI.exe" -q "path\to\QRes.exe" -v "1024x768" -d "1920x1080"
+   ./setup-msfs-quest-vr.ps1 -o "path\to\OculusDebugToolCLI.exe" -q "path\to\QRes.exe" -v "1024x768" -d "1920x1080"
    ```
 
 ---
