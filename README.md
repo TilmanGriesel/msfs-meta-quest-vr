@@ -1,4 +1,4 @@
-# **VR Setup and script guide**
+# MSFS Meta Quest VR Helper
 
 This script is designed to get the best VR performance out of Microsoft Flight Simulator (MSFS) in once click when using a Meta Quest headset. It tweaks some key settings to strike a balance between smooth visuals and optimal performance. It is also great as a component for automated setups.
 
@@ -18,6 +18,7 @@ For me, these settings have made a huge difference in how MSFS runs in VR. If yo
 ---
 
 ### My system specifications
+
 - CPU: AMD Ryzen 7 7700 (8-Core)
 - GPU: NVIDIA GeForce RTX 4070
 - Memory: 64GB @ 6000 MT/s
@@ -28,15 +29,19 @@ For me, these settings have made a huge difference in how MSFS runs in VR. If yo
 ## Setup instructions
 
 ### 1. Download and place QRes
+
 QRes is an hold tool that provides Windows resolution changes via CLI paramters.
+
 - Download **QRes** from [MajorGeeks](https://www.majorgeeks.com/files/details/qres.html).
 - Place the `QRes.exe` file in the bin folder.
 
 ### 2. Configure Meta Quest Link
-- **Refresh Rate:** Set to **80Hz** or higher.  
+
+- **Refresh Rate:** Set to **80Hz** or higher.
 - **Render Resolution:** Configure to **4192 x 2144** for optimal performance, if your rig is stronger then mine, you can probably go a bit higher.
 
 ### 3. Adjust Oculus Debug Tool settings
+
 - **Link Sharpening:** Set to **Disabled**.
   - This setting will make the output appear slightly blurrier but more realistic, enabling finer control through in-game settings.
   - Disabling sharpening provides a perceptually better overall result.
@@ -50,13 +55,13 @@ QRes is an hold tool that provides Windows resolution changes via CLI paramters.
    - Open PowerShell and execute the script.
    - You can customize the script using the following options:
 
-| Option | Description | Default Value |
-|--------|-------------|---------------|
-| `-o, --oculus-tool <path>` | Path to `OculusDebugToolCLI.exe` | `$DEFAULT_OCULUS_TOOL` |
-| `-l, --log-file <path>` | Path to the log file | `$DEFAULT_LOG_FILE` |
-| `-q, --qres-tool <path>` | Path to `QRes.exe` | `$DEFAULT_QRES_TOOL` |
-| `-v, --vr-resolution <res>` | VR resolution | `$DEFAULT_VR_RESOLUTION` |
-| `-d, --default-resolution <res>` | Default resolution | `$DEFAULT_DEFAULT_RESOLUTION` |
+| Option                           | Description                      | Default Value                 |
+| -------------------------------- | -------------------------------- | ----------------------------- |
+| `-o, --oculus-tool <path>`       | Path to `OculusDebugToolCLI.exe` | `$DEFAULT_OCULUS_TOOL`        |
+| `-l, --log-file <path>`          | Path to the log file             | `$DEFAULT_LOG_FILE`           |
+| `-q, --qres-tool <path>`         | Path to `QRes.exe`               | `$DEFAULT_QRES_TOOL`          |
+| `-v, --vr-resolution <res>`      | VR resolution                    | `$DEFAULT_VR_RESOLUTION`      |
+| `-d, --default-resolution <res>` | Default resolution               | `$DEFAULT_DEFAULT_RESOLUTION` |
 
 2. **Example Command**
    ```powershell
@@ -66,6 +71,7 @@ QRes is an hold tool that provides Windows resolution changes via CLI paramters.
 ---
 
 ### **Notes**
+
 - Ensure all paths and resolutions are configured correctly for your specific setup.
 - Experiment with the settings to find the best balance between performance and visual quality.
 

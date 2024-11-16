@@ -1,0 +1,5 @@
+server:asw.Off
+server:asw.Sim45
+server:asw.Mode
+
+exit

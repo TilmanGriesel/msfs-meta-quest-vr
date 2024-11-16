@@ -1,0 +1,7 @@
+server:asw.Off
+server:asw.Sim45
+server:asw.Mode 
+
+perfhud set-mode 1
+
+exit
